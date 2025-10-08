@@ -1,0 +1,17 @@
+.section-temporada{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+}
+.card-temporada{
+    text-align: center;
+    background-color: rgb(131, 132, 133);
+    width: 30%;
+}
+
+.card-temporada-img{
+    width: 397px;
+    height: 469px;
+}

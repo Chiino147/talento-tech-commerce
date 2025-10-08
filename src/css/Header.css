@@ -1,0 +1,76 @@
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 0.8rem 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+  }
+  
+  /* Navegación */
+  .ulNav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .ilNav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+  }
+  
+  .ilNav a:hover {
+    color: #0077ff;
+  }
+  
+  /* Logo */
+  .header-logo {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  /* Contenedor derecho (buscador + carrito) */
+  .NavCarrito {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  
+  .NavCarrito p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .NavCarrito p:hover {
+    color: #0077ff;
+  }
+  
+  /* 📱 Responsive */
+  @media (max-width: 768px) {
+    .Header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+  
+    .ulNav {
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .NavCarrito {
+      align-self: flex-end;
+    }
+  }

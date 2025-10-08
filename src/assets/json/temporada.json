@@ -1,0 +1,14 @@
+[
+    {
+        "temporada":"Primavera",
+        "foto":"../img/temporada1.png"
+    },
+    {
+        "temporada":"Verano",
+        "foto":"a"
+    },
+    {
+        "temporada":"Invierno",
+        "foto":"a"
+    }
+]
