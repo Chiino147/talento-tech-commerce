@@ -9,7 +9,7 @@ function Carrusel_Cards() {
 
     useEffect(() => {
       // 🔹 Reemplazá con tu URL real de MockAPI
-      fetch("https://68e443538e116898997b6778.mockapi.io/tipos/1/productos")
+      fetch("https://68e443538e116898997b6778.mockapi.io/productos")
         .then((res) => res.json())
         .then((data) => setItems(data))
         .catch((err) => console.error(err));

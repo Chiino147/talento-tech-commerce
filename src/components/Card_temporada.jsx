@@ -3,7 +3,7 @@ import '../css/Card_temporada.css'
 
 function Card_temporada({temporada,foto}) {
   return (
-    <div className='card-temporada'>
+    <div className='q'>
       <div className="card-temporada-div-img">
         <img src={foto} alt="" className='card-temporada-img'/>
       </div>

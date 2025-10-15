@@ -1,0 +1,64 @@
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards por fila */
+    gap: 20px;
+    padding: 20px;
+}
+.catalogo-card{
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.catalogo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+.catalogo-card-img{
+    width: 100%;
+    overflow: hidden;
+}
+
+.catalogo-card img {
+    width: 315px;
+    height: 410px;
+    height: auto; /* altura automática */
+    object-fit: cover; /* mantiene proporción */
+    transition: transform 0.3s;
+  }
+  .catalogo-card:hover .catalogo-card-img img {
+    transform: scale(1.1);
+  }
+  
+  .catalogo-card h3{
+    margin: 10px 0 5px 0;
+  font-size: 1.1rem;
+  color: #333;
+  }
+
+  .catalogo-card .precio {
+    font-weight: bold;
+    color: #1e90ff;
+  }
+  .precio-original {
+    text-decoration: line-through; /* tachado */
+    color: #888;
+    margin-right: 10px;
+    display: inline-block;
+  }
+  
+  .precio-descuento {
+    color: #ff4d4f; /* rojo para destacar */
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .descuento {
+    color: #ff4d4f;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
