@@ -1,0 +1,41 @@
+.Carrousel{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Carrousel .catalogo-card{
+    width: 50vw;
+    height: auto;
+}
+
+/* Tablet (mínimo 768px) */
+@media (min-width: 768px) {
+    .Carrousel{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .Carrousel .catalogo-card{
+        width: 31vw;
+        height: auto;
+    }
+}
+
+/* Desktop (mínimo 1024px) */
+@media (min-width: 1024px) {
+    .Carrousel{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .Carrousel .catalogo-card{
+        width: 30vw;
+        height: auto;
+    }
+}

@@ -1,13 +1,14 @@
 import React from 'react'
-import '../css/Card_temporada.css'
+import './Card_temporada.css'
 
 function Card_temporada({temporada,foto}) {
   return (
-    <div className='q'>
+    <div className='card-temporada'>
       <div className="card-temporada-div-img">
         <img src={foto} alt="" className='card-temporada-img'/>
       </div>
-        <p>{temporada}</p>
+        <h3>{temporada}</h3>
+        <button>Mas!</button>
     </div>
   )
 }

@@ -1,0 +1,29 @@
+.form{
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form input{
+    width: auto;
+    border-radius: 15px;
+    background-color: white;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.form select{
+    width: auto;
+    border-radius: 15px;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.form button{
+    width: auto;
+    background-color: rgb(19, 122, 64);
+}

@@ -1,0 +1,146 @@
+/* =============================
+   GRID DE PRODUCTOS
+============================= */
+.catalogo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem; /* espacio entre cards */
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+/* =============================
+   CARD INDIVIDUAL
+============================= */
+.catalogo-card {
+  background-color: #fff;
+  border-radius: 12%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  width: 80vw; /* base móvil */
+  min-height: 500px; /* altura uniforme */
+}
+
+.catalogo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* =============================
+   IMAGEN DEL PRODUCTO
+============================= */
+.catalogo-card-img {
+  width: 100%;
+  height: 250px; /* altura fija */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.catalogo-card-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* ropa completa */
+  transition: transform 0.3s;
+}
+
+.catalogo-card:hover .catalogo-card-img img {
+  transform: scale(1.05);
+}
+
+/* =============================
+   NOMBRE DEL PRODUCTO
+============================= */
+.catalogo-card h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: bold;
+  min-height: 2.4em; /* altura uniforme para nombres */
+}
+
+/* =============================
+   PRECIOS
+============================= */
+.precio-container {
+  min-height: 3em; /* altura constante */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.precio-original {
+  text-decoration: line-through; 
+  color: #888;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.precio-normal {
+  color: #000000;
+}
+
+.precio-descuento {
+  color: #ff4d4f; 
+  font-weight: bold;
+  display: inline-block;
+}
+
+.descuento {
+  color: #ff4d4f;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* =============================
+   BOTONES
+============================= */
+.catalogo-card button {
+  background-color: #fff9d9;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.buttonAdmin {
+  background-color: #10429f !important;
+  color: #ffffff !important;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.buttonAdmin-Link {
+  color: rgb(255, 255, 255);
+}
+
+/* =============================
+   RESPONSIVE
+============================= */
+
+/* Tablet (mínimo 768px) */
+@media (min-width: 768px) {
+  .catalogo-card {
+    width: 35vw;
+  }
+}
+
+/* Desktop (mínimo 1024px) */
+@media (min-width: 1024px) {
+  .catalogo-card {
+    width: 20vw;
+  }
+}

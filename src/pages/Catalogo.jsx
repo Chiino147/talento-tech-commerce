@@ -1,9 +1,9 @@
 import React,{useEffect,useState} from 'react'
 import manejarCarrito from './Carrito'
 import {useParams} from 'react-router-dom'
-import CardCatalogo from './CardCatalogo'
+import CardCatalogo from '../components/CardCatalogo/CardCatalogo'
 import "../css/Catalogo.css"
-
+import { Helmet } from "react-helmet";
 function Productos({agregar}) {
   //https://68e443538e116898997b6778.mockapi.io/tipos
   ////https://68e443538e116898997b6778.mockapi.io/productos
@@ -35,7 +35,11 @@ function Productos({agregar}) {
   
 
   return (
-    <div className='catalogo'>
+    <div className="catalogo-grid">
+        <Helmet>
+            <title>Productos | Mejiwoo</title>
+        <meta name="description" content="Descubrí todos nuestros productos: ropa, accesorios y más." />
+      </Helmet>
         {productos.map((producto)=>{
           return(
             <CardCatalogo
@@ -47,7 +51,7 @@ function Productos({agregar}) {
             id={producto.id}
             categoria={producto.tipoId}
             />
-
+            
             )
             
           })}

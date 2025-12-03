@@ -1,0 +1,115 @@
+.section-temporada {
+    display: flex;
+    flex-direction: row;  /* mobile-first: columnas */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Card individual */
+  .card-temporada {
+    display: flex;
+    flex-direction: column;  
+    text-align: center;
+    width: 90%;              /* ocupa casi todo el ancho en móvil */
+    max-width: 400px;
+    box-sizing: border-box;
+  }
+  
+  .card-temporada-img {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .card-temporada h3 {
+    font-size: clamp(20px, 4vw, 45px);
+    text-align: center;
+    font-weight: bolder;
+    margin: 10px 0;
+  }
+  
+  .card-temporada button {
+    background-color: #fff9d9;
+    color: black;
+    border-radius: 20px;
+    width: 50vw;
+    height:5vh;
+    margin-left:auto;
+    margin-right: auto;
+    padding: 0;
+
+    font-size: clamp(16px, 2vw, 35px);
+    font-weight: bold;
+    margin-top: 10px;
+    align-self: center;       /* asegura que el botón esté centrado */
+  }
+
+
+  /* Tablet (mínimo 768px) */
+@media (min-width: 768px) {
+    .section-temporada {
+        display: flex;
+        flex-direction: row;  /* mobile-first: columnas */
+        justify-content: center;
+        align-items: center;
+      }
+      .cards-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+      
+      /* Card individual */
+      .card-temporada {
+        display: flex;
+        flex-direction: column;  
+        text-align: center;
+        width: auto;              /* ocupa casi todo el ancho en móvil */
+        box-sizing: border-box;
+        margin-top: 1rem;
+      }
+      
+      .card-temporada-div-img img{
+        width: 40vw;        /* ocupa el ancho de la card */
+        height: 35vh;       /* altura automática según la imagen */
+      }
+}
+  
+  /* Desktop: ≥1024px */
+@media (min-width: 1024px) {
+    .section-temporada{
+      display: flex;
+      flex-direction: column;
+      padding: 20px;           
+    }
+    .card-temporada{
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: auto;
+      width: auto;
+    }
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card-temporada button{
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .card-temporada h3{
+    font-size: 20px;
+  }
+  .card-temporada-div-img img{
+    width: 25vw;        /* ocupa el ancho de la card */
+    height: 60vh;       /* altura automática según la imagen */
+  }
+
+
+  }

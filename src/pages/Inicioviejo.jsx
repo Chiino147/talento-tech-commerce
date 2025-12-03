@@ -1,13 +1,15 @@
 import {React,useEffect, useState} from 'react'
-import inicioimg from '../../public/img/inicioimg.png'
-import Card_temporada from './Card_temporada'
-import fotoP from '../../public/img/temporadaP.png'
-import fotoV from '../../public/img/temporadaV.png'
-import fotoI from '../../public/img/temporadaI.png'
-import Carrusel_Cards from './Carrusel_Cards'
-import Destacado from './Destacado'
+import inicioimg from '../img/inicioimg.png'
+import Card_temporada from '../components/CardTemporada/Card_temporada'
+import fotoP from '../img/temporadaP.png'
+import fotoV from '../img/../img/temporadaV.png'
+import fotoI from '../img/temporadaI.png'
+import Carrusel_Cards from '../components/SectionVentas/Carrusel_Cards'
+import Destacado from '../components/Section Destacado/Destacado'
 import "../css/section-destacado.css"
 import "../css/inicio.css"
+import descuento from '../img/descuento.svg'
+import SectionOpiniones from '../components/Opiniones/SectionOpiniones'
 function Inicio() {
 
   const [vendidos, setvendidos] = useState()
@@ -44,13 +46,18 @@ function Inicio() {
         foto={fotoI}
         />
         </section>
-
-        <h2>Lo mas vendido</h2>
-      
+        <h2>Lo mas vendido</h2> 
       <section className='section-top'>
         <Carrusel_Cards/>
       </section>
-
+      <sec className="section-descuento">
+      <img src={descuento} alt="descuento" className="img-descuento" />
+      <div className="contenido-centro">
+        <h3>Te regalamos un 50% Off</h3>
+        <p>para la compra minima!</p>
+        <button>Compra!</button>
+      </div>
+      </sec>
         <h2>Nuestras colecciones destacadas</h2>
       <section className='section-descatado'>
         <div>
@@ -81,11 +88,12 @@ function Inicio() {
         </div>
 
       </section>
+        <h2>Sus opiniones</h2>
       <section className='section-opiniones'>
-        <h2>Sus opinioes</h2>
+        <SectionOpiniones/>
       </section>
-      <section className='section-contacto'>
-        <h2>Sus opinioes</h2>
+      <section className='section-footer'>
+        <h1>Footer</h1>
       </section>
     </div>
   )

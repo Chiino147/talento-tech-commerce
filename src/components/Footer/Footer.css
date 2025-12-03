@@ -1,0 +1,147 @@
+.footer{
+    margin-top: 2rem;
+    background-color: #F7F6F0;
+    color: black;
+    text-align: center;
+}
+
+.footerConteiner{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footerConteiner p{
+    font-size: 1rem;
+}
+.footerConteiner h4{
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+.footer-logo{
+    width:25vw;
+    height: 30vh;
+}
+.footerContacto{
+    width: 100vw;
+    margin-top: 1.5rem;
+}
+
+.footerContacto form{
+    margin-top: 1.5rem;
+    width: 50vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+.footerContacto input{
+    background-color: white;
+    color: black;
+}
+.footerContacto button{
+    margin-top: 1rem;
+
+}
+
+.footerLinks{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerLinks img{
+    width: 50vw;
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+.footerLinks span{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer-p{
+    background-color: black;
+    color: white;
+    margin-top: 1rem
+}
+
+
+/* Tablet (mínimo 768px) */
+@media (min-width: 768px) {
+    .footer{
+        margin-top: 1.5rem;
+        background-color: #F7F6F0;
+        color: black;
+        text-align: center;
+    }
+    
+    .footerConteiner{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .footerConteiner p{
+        font-size: 1rem;
+    }
+    .footerConteiner h4{
+        font-weight: bold;
+    }
+    .footer-logo{
+        width:17vw;
+        height: 18vh;
+    }
+    .footerContacto{
+        width: 100vw;
+    }
+    
+    .footerContacto form{
+        width: 30vw;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .footerContacto input{
+        background-color: white;
+        color: black;
+    }
+    .footerContacto button{
+        margin-top: 1rem;
+    
+    }
+    
+    .footerLinks{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footerLinks img{
+        width: 25vw;
+        margin-top: 2rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .footerLinks span{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .footer-p{
+        background-color: black;
+        color: white;
+        margin-top: 1rem
+    }
+    
+}
+
+/* Desktop (mínimo 1024px) */
+@media (min-width: 1024px) {
+  
+}
+

@@ -1,9 +1,7 @@
 import React from 'react'
-import "../css/Destacado.css"
-
-import  knitwear from "../../public/img/knitwear.jpg"
-import  pants from  "../../public/img/pants.jpg"
-
+import "./Destacado.css"
+import  knitwear from "../../img/knitwear.jpg"
+import  pants from  "../../img/pants.jpg"
 
 function Destacado({tipo,foto}) {
 

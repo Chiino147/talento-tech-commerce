@@ -1,0 +1,90 @@
+/* Contenedor principal del carrito */
+.carrito-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-top: 80px;
+}
+  
+  /* Título */
+.carrito-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #222;
+    text-align: center;
+ }
+  
+  /* Lista de productos */
+.carrito-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+  /* Cada producto */
+.carrito-container li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+  
+.carrito-container li:last-child {
+    border-bottom: none;
+}
+  
+  /* Imagen del producto */
+.carrito-container li img {
+    width: 50vw;
+    height: 60vh;
+    object-fit:contain;
+    border-radius: 8px;
+}
+  
+  /* Info del producto */
+.carrito-container li span {
+    font-size: 1rem;
+    color: #555;
+}
+  
+  /* Total general */
+.carrito-total {
+    text-align: right;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+  
+  /* Botón Comprar todo */
+.carrito-container button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.15s ease;
+}
+  
+.carrito-container button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+.precio-original {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 0.9rem;
+}
+  
+.precio-descuento{
+  color: #b30000 !important; 
+}
+
+  
+  
