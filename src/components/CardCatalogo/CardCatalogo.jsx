@@ -15,10 +15,14 @@ function CardCatalogo({ nombre, precio, imagen, descuento, id, categoria }) {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2
   });
+    // Función para ir arriba de todo
+    const handleLinkClick = () => {
+      window.scrollTo(0, 0);
+    };
 
   return (
     <div className='catalogo-card'>
-      <Link to={`/categoria/${id}`}>
+      <Link to={`/categoria/${id}`} onClick={handleLinkClick}>
         <div className="catalogo-card-img">
           <img src={imagen} alt={nombre} />
         </div>
